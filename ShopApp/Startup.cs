@@ -9,19 +9,14 @@ namespace Shop
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            
+            services.AddMvc();
         }
 
         public async void Configure(IApplicationBuilder app, Microsoft.AspNetCore.Hosting.IHostingEnvironment env) {
-            if (env.IsDevelopment()) { app.UseDeveloperExceptionPage(); }
-
-            if (env.IsProduction()) {
-                app.Run(async (context) =>
-                {
-                    await context.Response.WriteAsync("Hello world");
-                });
-            }
-         
+            app.UseDeveloperExceptionPage();
+            app.UseStatusCodePages();
+            app.UseStaticFiles();
+            app.UseMvcWithDefaultRoute();
         } 
     }
 }
