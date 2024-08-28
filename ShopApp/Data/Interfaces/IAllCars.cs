@@ -4,7 +4,7 @@ namespace ShopApp.Data.Interfaces
 {
     public interface IAllCars
     {
-        IEnumerable<Car> Cars { get; set; }     
+        IEnumerable<Car> Cars { get; }     
         
         IEnumerable<Car> getFavCars { get; set; }
 
