@@ -12,9 +12,9 @@ namespace ShopApp.Data.Mocks
             {
                 return new List<Car>
                 {
-                     new Car{ name = "Tesla",shortDesc = "Быстрый автомобиль", longDesc = "Для тех кто заботится об экологии",img = "https://i.trse.ru/2015/02/tesla-model-s-2015-features.jpg",price = 45000, isFavourite=true,available = true,Category = _carsCategory.AllCategories.First()},
-                     new Car{ name = "Rolls Royce Phantom",shortDesc = "Классика", longDesc = "Для тех кому не нужно слов чтобы выделиться",img = "https://avatars.mds.yandex.net/i?id=d9d352e6c6cb1fb2f9420d5de504379ba37e98bf15211114-10933535-images-thumbs&n=13",price = 50000, isFavourite=true,available = true,Category = _carsCategory.AllCategories.Last()},
-                     new Car{ name = "Nissan GTR R34",shortDesc = "Для ночных гонок", longDesc = "Для тех кто люьит погонять по ночному городу",img = "https://www.fonstola.ru/images/202108/fonstola.ru_429521.jpg",price = 30000, isFavourite=false,available = true,Category = _carsCategory.AllCategories.Last()}
+                     new Car{ name = "Tesla",shortDesc = "Быстрый автомобиль", longDesc = "Для тех кто заботится об экологии",img = "/img/tesla.jpg",price = 45000, isFavourite=true,available = true,Category = _carsCategory.AllCategories.First()},
+                     new Car{ name = "Rolls Royce Phantom",shortDesc = "Классика", longDesc = "Для тех кому не нужно слов чтобы выделиться",img = "/img/rr.jpeg",price = 50000, isFavourite=true,available = true,Category = _carsCategory.AllCategories.Last()},
+                     new Car{ name = "Nissan GTR R34",shortDesc = "Для ночных гонок", longDesc = "Для тех кто люьит погонять по ночному городу",img = "/img/nissan.jpg",price = 30000, isFavourite=false,available = true,Category = _carsCategory.AllCategories.Last()}
                 };
             }
         }
